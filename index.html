@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="heading">Guess the number</h2>
+      <h4>Rules</h4>
+      <ul>
+        <li>Enter your guess between 1 and 100</li>
+        <li>Press check button</li>
+        <li>You'll be scored according to your number of guesses</li>
+      </ul>
+      <p id="guess_txt">
+        Guess a number : <input type="number" id="guess" />
+        <button onclick="check()" id="btn">Check</button>
+      </p>
+
+      <p id="answer" class="txt"></p>
+      <p id="score" class="txt"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

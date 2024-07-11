@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+Marker+Hatch&display=swap');
+
+
+* {
+    font-family: "Black Ops One", system-ui;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(-90deg, rgba(182, 48, 48, 0.197), rgb(71, 71, 192));
+    color: rgba(9, 1, 24, 0.764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 90%;
+    width: 500px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+h4 {
+    font-size: 20px;
+    margin: 40px 20px 0 0;   
+   
+}
+
+li {
+    font-weight: 200;
+    list-style-type:disc;
+    margin : 5px 0;
+}
+
+#heading {
+    font-weight: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#guess {
+    border: none;
+    border-radius: 50px;
+    width: 100px;
+    background-color: aliceblue;
+    height: 30px;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+#guess_txt{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#btn {
+
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(9, 1, 24, 0.764);
+    color: aliceblue;
+    height: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+#btn:hover {
+    background-color: aliceblue;
+    color: rgba(9, 1, 24, 0.764);
+}
+
+.txt {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsiveness  */
+/* for laptop/pc  */
+@media (max-width : 1200px){
+    .container{
+        width: 70%;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    #heading{
+        font-size : 28px;
+    }
+
+    #guess{
+        width: 90px;
+        height: 28px;
+    }
+
+    #btn{
+        height: 38px;
+    }
+
+    .txt{
+        font-size: 18px;
+    }
+}
+
+/* for tablet  */
+@media (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    #heading{
+        font-size:24px;
+    }
+
+    #guess{
+        width: 70px;
+        height: 24px;
+    }
+
+    #btn{
+        height: 34px;
+        padding: 8px 15px;
+    }
+
+    .txt{
+        font-size: 14px;
+    }
+}
+
+/* for mobile  */
+@media (max-width: 576px){
+    .container{
+        width: 95%;
+    }
+    h4{
+        font-size: 12px;
+    }
+
+    #heading{
+        font-size: 22px;
+    }
+
+    #guess{
+        width: 60px;
+        height: 22px;
+        font-size: 12px;
+    }
+
+    #btn{
+        height: 32px;
+        padding: 6px 12px;
+    }
+
+    .txt{
+        font-size: 12px;
+    }
+}
